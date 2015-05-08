@@ -1,0 +1,64 @@
+fieldset {
+	width: 400px;
+	margin: 40px auto;
+	border: 2px solid black;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+[type=text],
+[type=password] {
+	width: 99%;
+	height: 20px;
+	border: 2px solid #000;
+	outline: none;
+}
+
+
+body{
+	background-color: silver;
+}
+
+fieldset,
+legend,
+.field,
+.button {
+	border-color: black;
+}
+
+
+
+legend,
+.button {
+	font-weight: bold;
+	background-color: silver;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+legend {
+	padding: 4px;
+	border: 2px solid #781351;
+}
+
+.field {
+	background-color: white;
+}
+
+.field:hover {
+	background-color: #FFF;
+}
+
+.field:focus {
+	border-color: darkorange;
+	background-color: #FFFd;
+}
+
+.button {
+	display: block;
+	float: right;
+	background-color: silver;
+}
