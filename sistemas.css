@@ -32,13 +32,18 @@
 	border-radius: 0px 0px 0px 10px;
 }
 
+#designerhomes{
+  border-radius: 0px 0px 10px 0px;
+}
+
 #clear{
 	clear:both;
 }	
 
 body{
 	font-size:11px;
-	font-family:Verdana, Geneva, sans-serif;
+
+	font-family:Verdana, sans-serif;
 	color:#58595b;
 	margin:0px;
 	background-repeat:no-repeat;
@@ -46,26 +51,7 @@ body{
 	background-color: white;
 }
 
-#botaoTopoUm {
-	width:50px;
-	height:40px;
-	background-repeat:no-repeat;
-}
-#botaoTopoUm:hover {
-	width:50px;
-	height:40px;
-	background-repeat:no-repeat;
-}
-#botaoTopoQuatro {
-	width:45px;
-	height:35px;
-	background-repeat:no-repeat;
-}
-#botaoTopoQuatro:hover {
-	width:45px;
-	height:35px;
-	background-repeat:no-repeat;
-}
+
 
 #topoicones{
 	width:163px;
@@ -85,25 +71,16 @@ body{
 	
 }
 
-
-#menu {
-	width:950px;
-	height:38px;
-	background-repeat:repeat-x;
-	margin-top:20px;
-	padding-top:3px;
-	border-radius: 0px 0px 10px 10px;
-	background-color:#616161;
-
-	
+#menu{
+  text-align: center;
 }
 
 
 #menuInt {
-	height:41px;
 	float:left;
 	margin-left:5px;
 	margin-top:-3px;
+
 }
 #menuInt ul {
 	list-style: none;
@@ -111,23 +88,43 @@ body{
 	margin-top:13px;
 }
 #menuInt ul li {
-	display: inline;
+	position:relative;
+float:left;
+width: 157.5px;
+
+
+}
+
+#meni ul li {
+	position:relative;
+float:left;
+width: 235px;
+
+
+
+}
+
+#menos ul li {
+	position:relative;
+float:left;
+width: 189px;
+
+
 }
 #menuInt ul li a{
+
 
 	color:#FFF;
 	font-size:12px;
 	text-decoration:none;
-	border-right:1px solid #fff;
 	padding-left:10px;
 	padding-right:10px;
 	padding-bottom:14px;
-	padding-bottom:13px\9;
-	*padding-bottom:14px;
 	padding-top:13px;
 	margin-left:-4px;
-	*margin-left:0px;
+  display:block;
 	background-color:#616161;
+
 }
 	
 }
@@ -135,23 +132,39 @@ body{
 #menuInt ul li a.active{
 	color: #FFF;
 	background-color:#616161;
-	box-shadow: 0 0 20px;
-}
-#menuInt ul li a.active:hover{
-	color: #FFF;
-	background-color:#616161;
+
+	
 }
 
-#menuIntDir {
-	width:280px;
-	height:31px;
-	float:right;
-	padding-right:20px;
-	padding-top:10px;
-	text-align:right;
-	font-size: 13px;
-	color: white;
 
-
+/*faz p hover em cima dos menus quando passado o mouse*/
+#menu li a:hover{
+background:#333;
+color:#fff;
 }
+
+
+/*posição menu*/
+#menu li  ul{
+position:absolute;
+top:25px;
+left:0;
+background-color:#616161;
+display:none;
+
+}  
+
+#menu li:hover ul, .menu li.over ul{
+  display:block;
+}
+
+/*formata o sub menu*/
+#menu li ul li{   
+width:160px;
+text-align: center;
+}
+
+
+
+
 
