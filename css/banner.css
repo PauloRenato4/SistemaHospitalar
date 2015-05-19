@@ -1,0 +1,45 @@
+
+
+#conteudo{
+	
+	margin-top: 23px;
+	width:950px;
+	height:200px;
+	
+}
+#bannerOut{
+	position:relative;
+	width:800px;
+	
+	height: 300px;	
+}
+#bannerMaster{	
+	margin-top: 50	px;
+	width:950px;
+	height:200px;
+	margin-top: 1px;	
+
+}
+#bannerOut span{
+	position:absolute;
+	background: rgb(0, 0, 0); 
+   	background: rgba(0, 0, 0, 0.3);
+	opacity: 0.1;
+	bottom:0;
+	left:0;
+	display:none;
+	width:780px;
+	
+}
+.escondido{
+	display:none;
+}
+.visivel{
+	display:block;
+}
+
+img{
+	margin-top: 23px;
+	width:950px;
+	height:200px;
+}

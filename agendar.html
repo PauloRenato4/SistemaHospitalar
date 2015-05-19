@@ -325,6 +325,15 @@
  	</td>
  </tr>
 
+ <tr>
+   <td>
+     <label>Data Consulta:</label>
+   </td>
+  <td >
+   <input type="date" name="validade">
+   </td>
+ </tr>
+
  </table>
  </fieldset>
 
@@ -372,8 +381,8 @@
 
 <div class="botao">
   <input  type="submit" value="Agendar"> 
-<input  type="submit" value="Limpar"> 
-
+<input  type="reset" value="Limpar" onclick="reset()"> 
+<input type="button" value="Imprimir" OnClick="DoPrinting()">
 </div>
 
 <div id="footer">
@@ -381,7 +390,7 @@
   </div>
 </div>
 
-
+<script src="js/imprimir.js"></script>
 
 </body>
 </html>

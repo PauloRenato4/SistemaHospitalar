@@ -1,0 +1,7 @@
+
+		function DoPrinting(){
+			window.print()
+		}
+
+
+	
