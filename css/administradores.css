@@ -1,64 +1,39 @@
 fieldset {
-	width: 400px;
+	width: 200px;
 	margin: 40px auto;
 	border: 2px solid black;
 }
 
 label {
 	display: block;
-	margin-bottom: 8px;
-}
+	margin-bottom: 15px;
 
-[type=text],
-[type=password] {
-	width: 99%;
-	height: 20px;
-	border: 2px solid #000;
-	outline: none;
-}
-
-
-body{
-	background-color: silver;
-}
-
-fieldset,
-legend,
-.field,
-.button {
-	border-color: black;
 }
 
 
 
-legend,
-.button {
+legend, .button {
 	font-weight: bold;
 	background-color: silver;
-	color: #FFF;
+	color: blue;
 	text-transform: uppercase;
 }
 
 legend {
-	padding: 4px;
-	border: 2px solid #781351;
+	padding: 7px;
+	border: 2px solid red;
 }
 
-.field {
-	background-color: white;
+
+
+h3{
+	font-size: 25px;
+	color: red;
+	font-family:Verdana, sans-serif;
+	text-align: center;
+	
 }
 
-.field:hover {
-	background-color: #FFF;
-}
-
-.field:focus {
-	border-color: darkorange;
-	background-color: #FFFd;
-}
-
-.button {
-	display: block;
-	float: right;
-	background-color: silver;
+#botao{
+	text-align: center;
 }
