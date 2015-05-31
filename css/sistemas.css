@@ -14,6 +14,14 @@
 	margin-top: 1px;
 }
 
+.imgLupa{
+
+	width:25px;
+	height:25px;
+	margin-left: 12px;
+}
+
+
 
 #table{
 
@@ -59,7 +67,7 @@ body{
 
 #topoicones{
 	width:163px;
-	text-align: right;;
+	text-align: right;
 	vertical-align: bottom;
 }
 	

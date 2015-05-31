@@ -80,41 +80,50 @@
 
 <h1>Cadastro de Pacientes</h1>
 
+
 <fieldset id="fieldset">
  <legend  class="formulario">Dados Pessoais</legend>
+
+<form  action="php/CadastroPaciente.php" method="post"> 
+
  <table class="table">
+
+
+
   <tr>
    <td>
     <label >Nome: </label>
    </td>
    <td >
-    <input type="text" name="nome">
+    <input type="text" name="nome" required>
    </td>
    <td>
     <label for="sobrenome">Sobrenome: </label>
    </td>
    <td >
-    <input type="text" name="sobrenome">
+    <input type="text" name="sobrenome" required>
    </td>
 
   </tr>
 
 <tr>
-   <td>
+<td>
     <label>CPF:</label>
-   </td>
-   <td align="left">
-    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
-   </td>
+</td>
+<td>
+    <input type="text" name="cpf" size="11" maxlength="11" required> 
+ 
+  </td>
   </tr>
+
 
 <tr>
    <td>
     <label>RG: </label>
    </td>
    <td>
-    <input type="text" name="rg" size="13" maxlength="13"> 
-   </td>
+    <input type="text" name="rg" size="13" maxlength="13" required> 
+   </td>  
   </tr>
   
 <tr>
@@ -122,7 +131,7 @@
 		<label>Nacionalidade:</label>
 	</td>
 	<td>
-		<input type="text" name="nacionalidade">
+		<input type="text" name="nacionalidade" required>
 	</td>
 
 </tr>
@@ -132,7 +141,7 @@
 		<label>E-mail:</label>
 	</td>
 	<td>
-		<input type="text" name="e-mail">
+		<input type="text" name="email"  required>
 	</td>
 </tr>
 
@@ -141,7 +150,7 @@
     <label>Nascimento: </label>
    </td>
    <td >
-   <input type="date" name="validade">
+   <input type="date" name="nascimento" required> 
    </td>
   </tr>
 
@@ -150,33 +159,22 @@
     <label>Idade:</label>
   </td>
   <td>
-    <input type="text" name="idade" size="2" maxlength="3 ">
+    <input type="text" name="idade" size="3" maxlength="3 " required>
   </td>
 </tr>
 
 <tr>
-	<td>
-	<label for="telefone">Celular:</label>
-	</td>
-  <td>
-   <input  class="data" type="tel" name="telefone" size="2" maxlength="2"  placeholder="(  )" value=""> - 
-   <input type="tel" name="telefone" size="9" maxlength="9"  value=" ">
-  </td>
-</tr>
+      <td>DDD:</td>
+      <td><input name="ddd" type="text" size="2" maxlength="2" required/> - <input name="celular" type="text" required/></td>
+    </tr>
 
-  <tr>
-<td>
-<label>Sexo: </label>
-</td>
-<td>	
-<input id="feminino" name="sexo" type="radio" value="feminino" /> 
-	<label for="feminino">Feminino</label>
-	
-	
-	<input id="masculino" name="sexo" type="radio" value="masculino" /> 
-	<label for="masculino">Masculino</label>
-	</td>
-</tr>
+ <tr>
+      <td>Sexo:</td>
+      <td><input name="sexo" type="radio" value="M" checked="checked" />
+        Masculino 
+        <input name="sexo" type="radio" value="F" />
+        Feminino</td>
+    </tr>
 
  
  </table>
@@ -194,15 +192,16 @@
   <label>Tipo</label>
   </td>
   <td>
-  	 <select name="estado"> 
-    <option value="RU">Rua</option>
-     <option value="AV">Avenida</option> 
-    <option value="RO">Rodovia</option> 
-    <option value="EST">Estrada</option> 
-    <option value="TR">Travessa</option>
-    <option value="SI">Sitio</option> 
-     <option value="Q">Quadra</option>  
-     <option value="PC">Praça</option>  
+  	 <select name="tipo"> 
+     <option>Selecione</option>
+    <option value="RUA">Rua</option>
+     <option value="AVENIDA">Avenida</option> 
+    <option value="RODOVIA">Rodovia</option> 
+    <option value="ESTRADA">Estrada</option> 
+    <option value="TRAVESSA">Travessa</option>
+    <option value="SITIO">Sitio</option> 
+     <option value="QUADRA">Quadra</option>  
+     <option value="PRACA">Praça</option>  
     </select>
   </td>
 
@@ -212,13 +211,13 @@
     <label for="rua">Logradouro:</label>
    </td>
    <td >
-    <input type="text" name="rua">
+    <input type="text" name="logradouro" required>
    </td>
    <td>
     <label for="numero">Numero:</label>
    </td>
    <td>
-    <input type="text" name="numero" size="4">
+    <input type="text" name="numero" size="4" required>
    </td>
   </tr>
   <tr>
@@ -226,7 +225,7 @@
     <label for="bairro">Bairro: </label>
    </td>
    <td>
-    <input type="text" name="bairro">
+    <input type="text" name="bairro" required>
    </td>
   </tr>
   <tr>
@@ -235,33 +234,34 @@
    </td>
    <td >
     <select name="estado"> 
-    <option value="ac">Acre</option> 
-    <option value="al">Alagoas</option> 
-    <option value="am">Amazonas</option> 
-    <option value="ap">Amapá</option> 
-    <option value="ba">Bahia</option> 
-    <option value="ce">Ceará</option> 
-    <option value="df">Distrito Federal</option> 
-    <option value="es">Espírito Santo</option> 
-    <option value="go">Goiás</option> 
-    <option value="ma">Maranhão</option> 
-    <option value="mt">Mato Grosso</option> 
-    <option value="ms">Mato Grosso do Sul</option> 
-    <option value="mg">Minas Gerais</option> 
-    <option value="pa">Pará</option> 
-    <option value="pb">Paraíba</option> 
-    <option value="pr">Paraná</option> 
-    <option value="pe">Pernambuco</option> 
-    <option value="pi">Piauí</option> 
-    <option value="rj">Rio de Janeiro</option> 
-    <option value="rn">Rio Grande do Norte</option> 
-    <option value="ro">Rondônia</option> 
-    <option value="rs">Rio Grande do Sul</option> 
-    <option value="rr">Roraima</option> 
-    <option value="sc">Santa Catarina</option> 
-    <option value="se">Sergipe</option> 
-    <option value="sp">São Paulo</option> 
-    <option value="to">Tocantins</option> 
+    <option>Selecione</option>
+    <option value="AC">Acre</option> 
+    <option value="AL">Alagoas</option> 
+    <option value="AM">Amazonas</option> 
+    <option value="AP">Amapá</option> 
+    <option value="BA">Bahia</option> 
+    <option value="CE/">Ceará</option> 
+    <option value="DF">Distrito Federal</option> 
+    <option value="ES">Espírito Santo</option> 
+    <option value="GO">Goiás</option> 
+    <option value="MA">Maranhão</option> 
+    <option value="MT">Mato Grosso</option> 
+    <option value="MS">Mato Grosso do Sul</option> 
+    <option value="MG">Minas Gerais</option> 
+    <option value="PA">Pará</option> 
+    <option value="PB">Paraíba</option> 
+    <option value="PR">Paraná</option> 
+    <option value="PE">Pernambuco</option> 
+    <option value="PI">Piauí</option> 
+    <option value="RJ">Rio de Janeiro</option> 
+    <option value="RN">Rio Grande do Norte</option> 
+    <option value="RO">Rondônia</option> 
+    <option value="RS">Rio Grande do Sul</option> 
+    <option value="RR">Roraima</option> 
+    <option value="SC">Santa Catarina</option> 
+    <option value="SE">Sergipe</option> 
+    <option value="SP">São Paulo</option> 
+    <option value="TO">Tocantins</option> 
    </select>
    </td>
   </tr>
@@ -270,7 +270,7 @@
     <label for="cidade">Cidade: </label>
    </td>
    <td >
-    <input type="text" name="cidade">
+    <input type="text" name="cidade" required>
    </td>
   </tr>
   <tr>
@@ -278,7 +278,7 @@
     <label for="cep">CEP: </label>
    </td>
    <td >
-    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+    <input type="text" name="cep" size="10" maxlength="10" required> 
    </td>
   </tr>
  </table>
@@ -289,37 +289,43 @@
 <fieldset class="fieldset1">
  <legend class="formulario">Informações Paciente</legend>
  <table cellspacing="10">
+
  
  
  <tr>
  	<td>
- 	<input type="checkbox" name="vehicle" value="Bike">Possui alguma deficiência fisica <br>
+ 	<input type="checkbox" name="checke" value="ATIVO">Possui alguma deficiência fisica <br>
+ 	</td>
+
+ </tr>
+ <tr>
+ 	<td>/
+ 	<input type="checkbox" name="checke" value="ATIVO">Toma remédio controlado<br>
  	</td>
 
  </tr>
  <tr>
  	<td>
- 	<input type="checkbox" name="vehicle" value="Bike">Toma remédio controlado<br>
+ 	<input type="checkbox" name="checke" value="ATIVO">tem plano de saúde<br>
  	</td>
 
  </tr>
  <tr>
  	<td>
- 	<input type="checkbox" name="vehicle" value="Bike">tem plano de saúde<br>
+ 	<input type="checkbox" name="checke" value="ATIVO">Tem alergia a algum medicamento<br>
  	</td>
 
  </tr>
- <tr>
- 	<td>
- 	<input type="checkbox" name="vehicle" value="Bike">Tem alergia a algum medicamento<br>
- 	</td>
+<tr>
+  <td>
+  <input type="checkbox" name="checke" value="ATIVO" checked="checked">Nenhum dos casos acima<br>
+  </td>
 
  </tr>
-
 <tr>
 	<td>
 		<label>Informações Adicionais:</label><br>	
-		<textarea class="msg" cols="35" rows="8"></textarea><br>
+		<textarea name="mensagem" cols="125" rows="8"></textarea><br>
 </td>
 </tr>
 
@@ -328,8 +334,10 @@
 
 <div class="botao">
   <input  type="submit" value="Cadastrar"> 
-<input  type="submit" value="Limpar"> 
+<input  type="reset" value="Limpar"> 
 </div>
+
+</form>
 
 <div id="footer">
     <p> Todos os direitos reservados. Sistema Hospitalar</p>
