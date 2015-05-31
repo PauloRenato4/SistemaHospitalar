@@ -25,5 +25,8 @@ $mensagem = $_POST['mensagem'];
 
 
  mysql_query("INSERT INTO paciente(nome,sobrenome,cpf,rg,nacionalidade,email,nascimento,idade,ddd,celular,sexo,tipo,logradouro,numero,bairro,estado,cidade,cep, checke,mensagem)
-	VALUES ('$nome','$sobrenome','$cpf','$rg','$nacionalidade','$email','$nascimento','$idade','$ddd','$celular','$sexo','$tipo','$logradouro','$numero', '$bairro','$estado','$cidade','$cep','$checke', '$mensagem')")
+	VALUES ('$nome','$sobrenome','$cpf','$rg','$nacionalidade','$email','$nascimento','$idade','$ddd','$celular','$sexo','$tipo',
+		'$logradouro','$numero', '$bairro','$estado','$cidade','$cep','$checke', '$mensagem')")
+
+
  ?>
