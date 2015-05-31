@@ -69,6 +69,7 @@
 </ul>
 </li>
 
+
     <li><a   href="exames.html">EXAMES</a></li>
        <li><a id="designerhomes" href="atendencia.html">ATENDENCIA</a></li>
     
@@ -79,13 +80,12 @@
   </div>
 </nav>
 
-<h1>Cadastro de Pacientes</h1>
-
+<h1>Cadastro do Atendente</h1> 
 
 <fieldset id="fieldset">
  <legend  class="formulario">Dados Pessoais</legend>
 
-<form  action="php/CadastroPaciente.php" method="post"> 
+<form  action="php/CadastroAtendente.php" method="post"> 
 
  <table class="table">
 
@@ -128,22 +128,22 @@
   </tr>
   
 <tr>
-	<td>
-		<label>Nacionalidade:</label>
-	</td>
-	<td>
-		<input type="text" name="nacionalidade" required>
-	</td>
+  <td>
+    <label>Nacionalidade:</label>
+  </td>
+  <td>
+    <input type="text" name="nacionalidade" required>
+  </td>
 
 </tr>
 
 <tr>
-	<td>
-		<label>E-mail:</label>
-	</td>
-	<td>
-		<input type="text" name="email"  required>
-	</td>
+  <td>
+    <label>E-mail:</label>
+  </td>
+  <td>
+    <input type="text" name="email"  required>
+  </td>
 </tr>
 
   <tr>
@@ -193,7 +193,7 @@
   <label>Tipo</label>
   </td>
   <td>
-  	 <select name="tipo"> 
+     <select name="tipo"> 
      <option>Selecione</option>
     <option value="RUA">Rua</option>
      <option value="AVENIDA">Avenida</option> 
@@ -288,33 +288,71 @@
 
 
 <fieldset class="fieldset1">
- <legend class="formulario">Informações Paciente</legend>
+ <legend class="formulario">Cargo</legend>
+ <table cellspacing="10">
+
+ 
+<tr>
+   <td>
+    <label>Data Expedição: </label>
+   </td>
+   <td >
+   <input type="date" name="expedicao">
+   </td>
+  </tr>
+
+
+  <tr>
+<td>
+<label>Turno: </label>
+</td>
+<td>	
+<input name="turno" type="radio" value="matutino" checked="checked" /> 
+	<label>Matutino</label>
+	
+	
+	<input name="turno" type="radio" value="vespertino" /> 
+	<label >Vespertino</label>
+
+	<input name="turno" type="radio" value="diurno" /> 
+	<label >Diurno</label>
+
+	</td>
+</tr>
+
+</table>
+</fieldset>
+
+<br>
+
+<fieldset class="fieldset1">
+ <legend class="formulario">Informações do Atendente</legend>
  <table cellspacing="10">
 
  
  
  <tr>
- 	<td>
- 	<input type="checkbox" name="checke" value="ATIVO">Possui alguma deficiência fisica <br>
- 	</td>
+  <td>
+  <input type="checkbox" name="checke" value="ATIVO">Possui alguma deficiência fisica <br>
+  </td>
 
  </tr>
  <tr>
- 	<td>
- 	<input type="checkbox" name="checke" value="ATIVO">Toma remédio controlado<br>
- 	</td>
+  <td>
+  <input type="checkbox" name="checke" value="ATIVO">Toma remédio controlado<br>
+  </td>
 
  </tr>
  <tr>
- 	<td>
- 	<input type="checkbox" name="checke" value="ATIVO">tem plano de saúde<br>
- 	</td>
+  <td>
+  <input type="checkbox" name="checke" value="ATIVO">tem plano de saúde<br>
+  </td>
 
  </tr>
  <tr>
- 	<td>
- 	<input type="checkbox" name="checke" value="ATIVO">Tem alergia a algum medicamento<br>
- 	</td>
+  <td>
+  <input type="checkbox" name="checke" value="ATIVO">Tem alergia a algum medicamento<br>
+  </td>
 
  </tr>
 <tr>
@@ -324,9 +362,9 @@
 
  </tr>
 <tr>
-	<td>
-		<label>Informações Adicionais:</label><br>	
-		<textarea name="mensagem" cols="125" rows="8"></textarea><br>
+  <td>
+    <label>Informações Adicionais:</label><br>  
+    <textarea name="mensagem" cols="125" rows="8"></textarea><br>
 </td>
 </tr>
 
@@ -336,9 +374,8 @@
 <div class="botao">
   <input  type="submit" value="Cadastrar"> 
 <input  type="reset" value="Limpar"> 
-</div>
 
-</form>
+</div>
 
 <div id="footer">
     <p> Todos os direitos reservados. Sistema Hospitalar</p>

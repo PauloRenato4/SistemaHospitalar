@@ -54,8 +54,9 @@
 </ul>
 </li>
  <li><a href="#">CADASTRO</a>
-    <ul>
-    <li><a href="funcionario.html">FUNCIONÁRIO</a></li>
+   <ul>
+    <li><a href="cadastroAtendente.html">ATENDENTE</a></li>
+      <li><a href="cadastroMedico.html">MÉDICO</a></li>
      <li><a href="paciente.html">PACIENTE</a></li>
 </ul>
 </li>
@@ -63,7 +64,8 @@
  <li><a href="#">ALTERAR</a>
     <ul>
     <li><a href="alterarpaciente.html">CADASTRO PACIENTE</a></li>
-     <li><a href="alterarcadastro.html">CADASTRO FUNCIONARIO</a></li>
+     <li><a href="alterarCadastroAtendente.html">CADASTRO ATENDENTE</a></li>
+     <li><a href="alterarCadastroMedico.html">CADASTRO MEDICO</a></li>
 </ul>
 </li>
 
@@ -78,12 +80,12 @@
   </div>
 </nav>
 
-<h1>Cadastro de Funcionários</h1> 
+<h1>Cadastro do Medico</h1> 
 
 <fieldset id="fieldset">
  <legend  class="formulario">Dados Pessoais</legend>
 
-<form  action="php/CadastroFuncionario.php" method="post"> 
+<form  action="php/CadastroMedico.php" method="post"> 
 
  <table class="table">
 
@@ -159,6 +161,15 @@
   </td>
   <td>
     <input type="text" name="idade" size="3" maxlength="3 " required>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <label>CRM</label>
+  </td>
+  <td>
+    <input type="text" name="crm" size="5" maxlength="8" required>
   </td>
 </tr>
 
@@ -286,18 +297,10 @@
 
 
 <fieldset class="fieldset1">
- <legend class="formulario">Função</legend>
+ <legend class="formulario">Cargo</legend>
  <table cellspacing="10">
 
- <tr>
- 	<td>
- 		<label>Cargo:</label>
- 	</td>
- 	<td>
- 		<input type="text" name="cargo">
- 	</td>
- </tr>
-
+ 
 <tr>
    <td>
     <label>Data Expedição: </label>
@@ -332,7 +335,7 @@
 <br>
 
 <fieldset class="fieldset1">
- <legend class="formulario">Informações Funcionario</legend>
+ <legend class="formulario">Informações do Médico</legend>
  <table cellspacing="10">
 
  
@@ -344,7 +347,7 @@
 
  </tr>
  <tr>
-  <td>/
+  <td>
   <input type="checkbox" name="checke" value="ATIVO">Toma remédio controlado<br>
   </td>
 
