@@ -1,0 +1,75 @@
+head {
+ background-color: white;
+    width: auto;
+    
+}
+
+
+
+body {
+   
+    white-space: pre-wrap;
+    word-wrap: break-word;
+   background: white;
+border: none;
+font: 10px Arial, Helvetica, sans-serif;
+   
+}
+
+
+
+@media print
+{
+
+    
+    body
+{
+background: #FFF;
+border: none;
+width:800px;
+height:auto;
+font: 80px Arial, Helvetica, sans-serif;
+}
+}
+
+h1{
+    
+    text-align: center;
+    background-color: #CCCBCB;
+    color: #fff bold;
+    
+    
+}
+
+
+textarea{
+    align-content: center;
+     width: 960px;
+    height: 300px;
+    float: left;
+    padding-right: 20px;
+  color: black;
+    
+   
+    
+}
+
+#receita
+{    
+    background-color:#9D9898;
+    max-width: 980px;
+    margin-left: 10%;
+}
+
+input
+{
+    width:30%;
+    
+}
+
+
+img{
+    
+    width:80px;
+    
+}

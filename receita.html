@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html>
+
+<link rel="stylesheet" href="css/receituario.css">
+<meta charset="UTF-8">
+<script src="js/receita.js"></script>
 <head>
-	<title></title>
+	<title>Receituario</title>
+	
+
 </head>
 <body>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<a href="medicohospital.html">MEDICO</a>
+<div id="receita">
+<img src="Imagens/logo.jpg" >
+<h1>RECEITUÁRIO</h1>
+<span>Paciente:</span> <input type="text" name="paciente">
+
+
+<span>Endereço:</span> <input  type="text" name="endereco">
+
+
+<textarea maxlength="400"></textarea>
+<script language=javascript type="text/javascript">
+now = new Date
+document.write ("Data:"  + now.getDate() + " / " + now.getMonth() + " / " + now.getFullYear()+ "   " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() )
+</script>  
+
+
+
+ 
+
+
+ </div>
+
 </body>
+<div id="footer">
+    <p> Todos os direitos reservados. Sistema Hospitalar</p>
+  </div>
 </html>
