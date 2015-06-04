@@ -26,6 +26,15 @@ $checke = $_POST['checke'];
 $mensagem = $_POST['mensagem'];
 
 
- mysql_query("INSERT INTO atendente(nome,sobrenome,cpf,rg,nacionalidade,email,nascimento,idade,ddd,celular,sexo,tipo,logradouro,numero,bairro,estado,cidade,cep,expedicao,turno,checke,mensagem)
-	VALUES ('$nome','$sobrenome','$cpf','$rg','$nacionalidade','$email','$nascimento','$idade','$ddd','$celular','$sexo','$tipo','$logradouro','$numero', '$bairro','$estado','$cidade','$cep','$expedicao','$turno','$checke', '$mensagem')")
+if( mysql_query("INSERT INTO atendente(nome,sobrenome,cpf,rg,nacionalidade,email,nascimento,idade,ddd,celular,sexo,tipo,logradouro,numero,bairro,estado,cidade,cep,expedicao,turno,checke,mensagem)
+	VALUES ('$nome','$sobrenome','$cpf','$rg','$nacionalidade','$email','$nascimento','$idade','$ddd','$celular','$sexo','$tipo','$logradouro','$numero', '$bairro','$estado','$cidade','$cep','$expedicao','$turno','$checke', '$mensagem')")){
+
+
+echo "Cadastro Realizado Com Sucesso!";
+
+
+}
+else
+echo "Cadastro Nao Realizado";
+
  ?>
