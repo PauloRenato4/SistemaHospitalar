@@ -31,7 +31,10 @@ if( mysql_query("INSERT INTO paciente(nome,sobrenome,cpf,rg,nacionalidade,email,
 echo "Cadastro Realizado Com Sucesso!";
 
 
+
 }
-else
+else{
 echo "Cadastro Nao Realizado";
- ?>
+}
+ 
+?>
