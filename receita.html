@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-
+<link rel="stylesheet" href="css/sistemas.css">
 <link rel="stylesheet" href="css/receituario.css">
 <meta charset="UTF-8">
-<script src="js/receita.js"></script>
 <head>
 	<title>Receituario</title>
 	
@@ -26,13 +25,27 @@ now = new Date
 document.write ("Data:"  + now.getDate() + " / " + now.getMonth() + " / " + now.getFullYear()+ "   " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() )
 </script>  
 
+<div class="ass">
+    
+  <label>------------------------------------------------------------------
+                        assinatura e 
+                        carimbo do medico</label>  
+    
+    
+</div>
+
+
+<div class="b">
+<input type="button" value="Imprimir" OnClick="DoPrinting()">
+</div>
+
 
 
  
 
 
  </div>
-
+<script src="js/imprimir.js"></script>
 </body>
 <div id="footer">
     <p> Todos os direitos reservados. Sistema Hospitalar</p>
