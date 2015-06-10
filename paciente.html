@@ -5,6 +5,8 @@
      <meta charset= "UTF-8"> 
 
   <title>Sistema Hospitalar</title>
+  <script type="js/validacaoEmail.js"></script>
+
   <link rel="stylesheet"  href="css/sistemas.css">
   <link rel="stylesheet" href="css/banners.css">
 
@@ -85,7 +87,7 @@
 <fieldset id="fieldset">
  <legend  class="formulario">Dados Pessoais</legend>
 
-<form  action="php/CadastroPaciente.php" method="post"> 
+<form  action="php/CadastroPaciente.php" method="post" name="form1"> 
 
  <table class="table">
 
@@ -139,10 +141,10 @@
 
 <tr>
 	<td>
-		<label>E-mail:</label>
+		<label for="email">E-mail:</label>
 	</td>
 	<td>
-		<input type="text" name="email"  required>
+		<input type="text" name="email" id="email"  required>
 	</td>
 </tr>
 
@@ -334,7 +336,7 @@
   </fieldset>
 
 <div class="botao">
-  <input  type="submit" value="Cadastrar"> 
+  <input  type="submit" value="Cadastrar" onfocus="return validacaoEnail()" > 
 <input  type="reset" value="Limpar"> 
 </div>
 
@@ -344,7 +346,6 @@
     <p> Todos os direitos reservados. Sistema Hospitalar</p>
   </div>
 </div>
-
 
 
 </body>
