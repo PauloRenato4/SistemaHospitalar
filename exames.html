@@ -89,14 +89,17 @@
 
 <fieldset class="fieldset1">
  <legend class="formulario">Exames</legend>
- <table cellspacing="10">
+
+ <form  action="php/CadastroExame.php" method="post"> 
+
+ <table class="table">
 
   <tr>
   <td>
   <label>Tipo</label>
   </td>
   <td>
-  	 <select name="tipo"> 
+  	 <select name="nomeExame"> 
     <option value="Rim">Rim</option>
      <option value="Cancer">Cancer</option> 
     <option value="Prostata">Prostata</option> 
@@ -111,14 +114,16 @@
 </tr>
 
 </table>
-</fieldset>
 
+</fieldset>
 
 <div class="botao">
   <input  type="submit" value="Agendar"> 
 <input  type="reset" value="Limpar" > 
 <input type="button" value="Imprimir" OnClick="DoPrinting()">
 </div>
+
+</form>
 
 <div id="footer">
     <p> Todos os direitos reservados. Sistema Hospitalar</p>
@@ -127,7 +132,7 @@
 
 <script src="js/imprimir.js"></script>
 
-</form>
+
 
 </body>
 </html>
