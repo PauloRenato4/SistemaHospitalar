@@ -88,7 +88,7 @@
 <fieldset id="fieldset">
  <legend  class="formulario">Dados Pessoais</legend>
 
-<form  action="php/CadastroPaciente.php" method="post" name="form1"> 
+<form  action="php/CadastroPaciente.php" method="post" > 
 
  <table class="table">
 
@@ -149,14 +149,12 @@
   </td>
 </tr>
 
-<body onload="calculaIdade()">
-<form action="">
   <tr>
    <td>
     <label>Nascimento: </label>
    </td>
    <td >
-   <input type="date" name="nascimento"  id="nascimento" oninput="calcule()"  required> 
+   <input type="date" name="nascimento"  id="nascimento"   required> 
    </td>
   </tr>
 
@@ -165,12 +163,10 @@
     <label>Idade:</label>
   </td>
   <td>
-  <p id="result"></p>
+  <input type="text" name="idade" size="2" maxlength="3" required>
   </td>
 </tr>
-</form>
 
-</body>
 
 
 <tr>
