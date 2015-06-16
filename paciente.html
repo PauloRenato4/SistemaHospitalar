@@ -6,13 +6,14 @@
 
   <title>Sistema Hospitalar</title>
   <script type="js/validacaoEmail.js"></script>
+  <script type="js/calculaidade.js"></script>
 
   <link rel="stylesheet"  href="css/sistemas.css">
   <link rel="stylesheet" href="css/banners.css">
 
 
 </head>
-<body>
+<body >
 
 <div id="site">
         <div id="topo">
@@ -148,12 +149,14 @@
 	</td>
 </tr>
 
+<body onload="calculaIdade()">
+<form action="">
   <tr>
    <td>
     <label>Nascimento: </label>
    </td>
    <td >
-   <input type="date" name="nascimento" required> 
+   <input type="date" name="nascimento"  id="nascimento" oninput="calcule()"  required> 
    </td>
   </tr>
 
@@ -162,9 +165,13 @@
     <label>Idade:</label>
   </td>
   <td>
-    <input type="text" name="idade" size="3" maxlength="3 " required>
+  <p id="result"></p>
   </td>
 </tr>
+</form>
+
+</body>
+
 
 <tr>
       <td>DDD:</td>
