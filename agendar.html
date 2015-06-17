@@ -85,13 +85,14 @@
 <fieldset id="fieldset">
  <legend  class="formulario">Dados Pessoais</legend>
  <table class="table">
-
+ <form name="formulario" method="post">
  <tr>
    <td>
     <label>CPF:</label>
    </td>
    <td align="left">
-    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+    <input type="text" name="cpf" size="9" maxlength="11" id="cpfB">
+    <input type="submit" value="Buscar" id="buscarP" name="busca">
     
    </td>
   </tr>
@@ -100,9 +101,11 @@
    <td>
     <label >Nome: </label>
    </td>
-   <td >
-    <input type="text" name="nome">
+  
+   <td>
+    <input type="text" name="nome" id="name">
    </td>
+
    <td>
     <label for="sobrenome">Sobrenome: </label>
    </td>
@@ -124,22 +127,22 @@
   </tr>
   
 <tr>
-	<td>
-		<label>Nacionalidade:</label>
-	</td>
-	<td>
-		<input type="text" name="nacionalidade">
-	</td>
+  <td>
+    <label>Nacionalidade:</label>
+  </td>
+  <td>
+    <input type="text" name="nacionalidade">
+  </td>
 
 </tr>
 
 <tr>
-	<td>
-		<label>E-mail:</label>
-	</td>
-	<td>
-		<input type="text" name="e-mail">
-	</td>
+  <td>
+    <label>E-mail:</label>
+  </td>
+  <td>
+    <input type="text" name="e-mail">
+  </td>
 </tr>
 
   <tr>
@@ -161,9 +164,9 @@
 </tr>
 
 <tr>
-	<td>
-	<label for="telefone">Celular:</label>
-	</td>
+  <td>
+  <label for="telefone">Celular:</label>
+  </td>
   <td>
    <input  class="data" type="tel" name="telefone" size="2" maxlength="2"  placeholder="(  )" value=""> - 
    <input type="tel" name="telefone" size="9" maxlength="9"  value=" ">
@@ -174,14 +177,14 @@
 <td>
 <label>Sexo: </label>
 </td>
-<td>	
+<td>  
 <input id="feminino" name="sexo" type="radio" value="feminino" /> 
-	<label for="feminino">Feminino</label>
-	
-	
-	<input id="masculino" name="sexo" type="radio" value="masculino" /> 
-	<label for="masculino">Masculino</label>
-	</td>
+  <label for="feminino">Feminino</label>
+  
+  
+  <input id="masculino" name="sexo" type="radio" value="masculino" /> 
+  <label for="masculino">Masculino</label>
+  </td>
 </tr>
 
  
@@ -200,7 +203,7 @@
   <label>Tipo</label>
   </td>
   <td>
-  	 <select name="estado"> 
+     <select name="estado"> 
     <option value="RU">Rua</option>
      <option value="AV">Avenida</option> 
     <option value="RO">Rodovia</option> 
@@ -287,6 +290,7 @@
     <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
    </td>
   </tr>
+     </form>
  </table>
 </fieldset>
 <br />
@@ -295,12 +299,12 @@
  <legend class="formulario">Dados da Consulta</legend>
  <table cellspacing="10">
 
- <p>imprementar calendario medico com dias disponiveis</p>	
+ <p>imprementar calendario medico com dias disponiveis</p>  
  
 
 <tr>
 <td>
-	<label>Tipo de Consulta</label>
+  <label>Tipo de Consulta</label>
 </td>
 <td >
     <select name="consulta"> 
@@ -319,12 +323,12 @@
 </tr>
 
 <tr>
- 	<td>
- 		<label>Médico:</label>
- 	</td>
- 	<td>
- 		<input type="text"  name="medico">
- 	</td>
+  <td>
+    <label>Médico:</label>
+  </td>
+  <td>
+    <input type="text"  name="medico">
+  </td>
  </tr>
 
  <tr>
@@ -347,34 +351,34 @@
  
  
  <tr>
- 	<td>
- 	<input type="checkbox" name="vehicle" value="Bike">Possui alguma doença <br>
- 	</td>
+  <td>
+  <input type="checkbox" name="vehicle" value="Bike">Possui alguma doença <br>
+  </td>
 
  </tr>
  <tr>
- 	<td>
- 	<input type="checkbox" name="vehicle" value="Bike">Toma remédio controlado<br>
- 	</td>
+  <td>
+  <input type="checkbox" name="vehicle" value="Bike">Toma remédio controlado<br>
+  </td>
 
  </tr>
  <tr>
- 	<td>
- 	<input type="checkbox" name="vehicle" value="Bike">tem plano de saúde<br>
- 	</td>
+  <td>
+  <input type="checkbox" name="vehicle" value="Bike">tem plano de saúde<br>
+  </td>
 
  </tr>
  <tr>
- 	<td>
- 	<input type="checkbox" name="vehicle" value="Bike">Tem alergia a algum medicamento<br>
- 	</td>
+  <td>
+  <input type="checkbox" name="vehicle" value="Bike">Tem alergia a algum medicamento<br>
+  </td>
 
  </tr>
 
 <tr>
-	<td>
-		<label>Informações Adicionais:</label><br>	
-		<textarea class="msg" cols="35" rows="8"></textarea><br>
+  <td>
+    <label>Informações Adicionais:</label><br>  
+    <textarea class="msg" cols="35" rows="8"></textarea><br>
 </td>
 </tr>
 
@@ -393,6 +397,9 @@
 </div>
 
 <script src="js/imprimir.js"></script>
+            <script src="http://code.jquery.com/jquery-1.9.0.js"></script>                                          
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>      
+<script src="js/AjaxBuscaPaciente/ControllerPacient.js"></script>
 
 </body>
 </html>
