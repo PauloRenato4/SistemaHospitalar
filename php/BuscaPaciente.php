@@ -2,18 +2,20 @@
 
 include_once('conexao.php');
 
-$cpf =$_POST['cpf'];
+$cpf = $_POST['cpf'];
 
-if(isset($_GET['cpf'])){
-   $sql = "SELECT cpf FROM paciente WHERE cpf='$cpf'";
-   $result = mysql_query($sql) or die (mysql_error());
+if( $sql = 'SELECT cpf FROM paciente where cpf=$cpf'){
 
-    while ($linha = mysql_fetch_array($result)) {
-
-    return $result;
+	echo "string";
+}
 
 
-    }
+Ajax.request({
+			url      : "cep/endereco.php?cep=" + CEP,
+			params   : form,
+			callback : Index.preencherCampos,
+			callerro : Index.limparCampo
+		});
 
 
 ?>
