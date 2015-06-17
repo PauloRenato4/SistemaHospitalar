@@ -28,7 +28,7 @@ exit(0);
  * @param int $altura: Altura do grafico
  * @return string Tag IMG com o caminho para o grafico
  */
-function gerar_grafico_torta($dados, $titulo, $largura = 250, $altura = 100) {
+function gerar_grafico_torta($dados, $titulo, $largura = 300, $altura = 100) {
 
     // Gerando a URL dinamicamente
     $labels = array_keys($dados);
