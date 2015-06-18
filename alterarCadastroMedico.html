@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+     <meta charset= "UTF-8"> 
+
+  <title>Sistema Hospitalar</title>
+  <link rel="stylesheet"  href="css/sistemas.css">
+  <link rel="stylesheet" href="css/banners.css">
+
+
+</head>
+<body>
+
+<div id="site">
+        <div id="topo">
+  <table id = "table">
+        <tr>
+            <td>
+              <img id="logo" src="Imagens/logo.jpg" >
+               
+           </td>
+
+              <td id="topoicones">   
+                 <div id="botaoTopo">
+                    <table id="tableface">
+                      <tr>
+                        <a href="https://www.facebook.com/paulo.renato.904"><img id="facebook" border="0" src="Imagens/facebook.png"/></a>
+
+
+                      </tr>
+                    </table>
+              </div>
+          </td>
+      </tr>
+    </table>
+    <div id="clear"></div>
+    </div>
+
+
+
+<nav>
+
+<div id="menu">
+  <div id="menuInt">
+  <div id="menos">
+    <ul>
+    
+    <li><a id="designerhome" href="atendentehospital.html">HOME</a></li>
+    <li><a href="#">AGENDAMENTO</a>
+    <ul>
+    <li><a href="agendar.html">AGENDAR</a></li>
+     <li><a href="alterarconsulta.html">ALTERAR CONSULTA</a></li>
+</ul>
+</li>
+ <li><a href="#">CADASTRO</a>
+    <ul>
+    <li><a href="cadastroAtendente.html">ATENDENTE</a></li>
+      <li><a href="cadastroMedico.html">MÉDICO</a></li>
+     <li><a href="paciente.html">PACIENTE</a></li>
+</ul>
+</li>
+
+ <li><a href="#">ALTERAR</a>
+    <ul>
+    <li><a href="alterarpaciente.html">CADASTRO PACIENTE</a></li>
+     <li><a href="alterarCadastroAtendente.html">CADASTRO ATENDENTE</a></li>
+     <li><a href="alterarCadastroMedico.html">CADASTRO MEDICO</a></li>
+</ul>
+</li>
+
+
+    <li><a   href="exames.html">EXAMES</a></li>
+       <li><a id="designerhomes" href="atendencia.html">RELATORIOS</a></li>
+    
+
+  </ul>
+  </div>
+  </div>
+  </div>
+</nav>
+
+<h1>Cadastro de Médico</h1>
+
+<fieldset id="fieldset">
+ <legend  class="formulario">Dados Pessoais</legend>
+ <table class="table">
+
+ <tr>
+   <td>
+    <label>CPF:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+   </td>
+  </tr>
+  
+  <tr>
+   <td>
+    <label >Nome: </label>
+   </td>
+   <td >
+    <input type="text" name="nome">
+   </td>
+   <td>
+    <label for="sobrenome">Sobrenome: </label>
+   </td>
+   <td >
+    <input type="text" name="sobrenome">
+   </td>
+
+  </tr>
+
+
+
+<tr>
+   <td>
+    <label>RG: </label>
+   </td>
+   <td>
+    <input type="text" name="rg" size="13" maxlength="13"> 
+   </td>
+  </tr>
+  
+<tr>
+	<td>
+		<label>Nacionalidade:</label>
+	</td>
+	<td>
+		<input type="text" name="nacionalidade">
+	</td>
+
+</tr>
+
+<tr>
+	<td>
+		<label>E-mail:</label>
+	</td>
+	<td>
+		<input type="text" name="e-mail">
+	</td>
+</tr>
+
+  <tr>
+   <td>
+    <label>Nascimento: </label>
+   </td>
+   <td >
+    <input type="date" name="validade">
+   </td>
+  </tr>
+
+
+
+<tr>
+	<td>
+	<label for="telefone">Celular:</label>
+	</td>
+  <td>
+   <input  class="data" type="tel" name="telefone" size="2" maxlength="2"  placeholder="(  )" value=""> - 
+   <input type="tel" name="telefone" size="9" maxlength="9"  value=" ">
+  </td>
+</tr>
+
+  <tr>
+<td>
+<label>Sexo: </label>
+</td>
+<td>	
+<input id="feminino" name="sexo" type="radio" value="feminino" /> 
+	<label for="feminino">Feminino</label>
+	
+	
+	<input id="masculino" name="sexo" type="radio" value="masculino" /> 
+	<label for="masculino">Masculino</label>
+	</td>
+</tr>
+
+ 
+ </table>
+</fieldset>
+
+
+<br/>
+
+<fieldset class="fieldset1">
+ <legend class="formulario">Endereço</legend>
+ <table cellspacing="10">
+
+  <tr>
+  <td>
+  <label>Tipo</label>
+  </td>
+  <td>
+  	 <select name="estado"> 
+    <option value="RU">Rua</option>
+     <option value="AV">Avenida</option> 
+    <option value="RO">Rodovia</option> 
+    <option value="EST">Estrada</option> 
+    <option value="TR">Travessa</option>
+    <option value="SI">Sitio</option> 
+     <option value="Q">Quadra</option>  
+     <option value="PC">Praça</option>  
+    </select>
+  </td>
+
+</tr>
+<tr>
+   <td>
+    <label for="rua">Logradouro:</label>
+   </td>
+   <td >
+    <input type="text" name="rua">
+   </td>
+   <td>
+    <label for="numero">Numero:</label>
+   </td>
+   <td>
+    <input type="text" name="numero" size="4">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="bairro">Bairro: </label>
+   </td>
+   <td>
+    <input type="text" name="bairro">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="estado">Estado:</label>
+   </td>
+   <td >
+    <select name="estado"> 
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cidade">Cidade: </label>
+   </td>
+   <td >
+    <input type="text" name="cidade">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cep">CEP: </label>
+   </td>
+   <td >
+    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+
+
+<fieldset class="fieldset1">
+ <legend class="formulario">Função</legend>
+ <table cellspacing="10">
+
+ <tr>
+ 	<td>
+ 		<label>Cargo:</label>
+ 	</td>
+ 	<td>
+ 		<input type="text" name="cargo">
+ 	</td>
+ </tr>
+
+<tr>
+   <td>
+    <label>Data Expedição: </label>
+   </td>
+   <td >
+   <input type="date" name="validade">
+   </td>
+  </tr>
+
+
+  <tr>
+<td>
+<label>Turno: </label>
+</td>
+<td>	
+<input id="matutino" name="turno" type="radio" value="matutino" /> 
+	<label for="matutino">Matutino</label>
+	
+	
+	<input id="vespertino" name="turno" type="radio" value="vespertino" /> 
+	<label for="vespertino">Vespertino</label>
+
+	<input id="diurno" name="turno" type="radio" value="diurno" /> 
+	<label for="diurno">Diurno</label>
+
+	</td>
+</tr>
+
+</table>
+</fieldset>
+
+<br>
+
+
+<div class="botao">
+  <input  type="submit" value="Cadastrar"> 
+<input  type="submit" value="Limpar"> 
+<input  type="submit" value="Deletar"> 
+</div>
+
+<div id="footer">
+    <p> Todos os direitos reservados. Sistema Hospitalar</p>
+  </div>
+</div>
+
+
+
+</body>
+</html>
