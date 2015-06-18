@@ -1,0 +1,6 @@
+
+
+function gerarpdf() {
+
+window.pdf()
+}
