@@ -2,6 +2,7 @@
 
 
 include_once('conexao.php');
+
   $cpf = $_POST['cpf'];
   $sql = $conexao_pdo->prepare("SELECT *                                                           
                                 FROM  paciente v

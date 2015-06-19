@@ -1,5 +1,5 @@
 <?php 
-include_once('conexao.php');
+include_once('conect.php');
 $nome = $_POST['nome'];
 $sobrenome = $_POST['sobrenome'];
 $cpf =$_POST['cpf'];

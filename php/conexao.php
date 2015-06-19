@@ -1,6 +1,5 @@
-
-
 <?php
+
 $base_dados = 'sistemashospitalar';
 $usuario_bd = 'root';
 $senha_bd   = 'root';
@@ -24,5 +23,4 @@ try {
     // Mata o script
     die();
 }
-
- ?>
+?>
