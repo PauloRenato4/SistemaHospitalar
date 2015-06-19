@@ -134,14 +134,13 @@
 	</td>
 
 </tr>
-
 <tr>
-	<td>
-		<label>E-mail:</label>
-	</td>
-	<td>
-		<input type="text" name="e-mail">
-	</td>
+  <td>
+    <label for="email">E-mail:</label>
+  </td>
+  <td>
+    <input type="text" name="email" id="email"  >
+  </td>
 </tr>
 
   <tr>
@@ -149,7 +148,7 @@
     <label>Nascimento: </label>
    </td>
    <td >
-    <input type="date" name="validade">
+   <input type="date" name="nascimento"  id="nascimento"   > 
    </td>
   </tr>
 
@@ -158,41 +157,28 @@
     <label>Idade:</label>
   </td>
   <td>
-    <input type="text" name="idade" size="2" maxlength="3 ">
+  <input type="text" name="idade" size="2" maxlength="3">
   </td>
 </tr>
+
+
 
 <tr>
-	<td>
-	<label for="telefone">Celular:</label>
-	</td>
-  <td>
-   <input  class="data" type="tel" name="telefone" size="2" maxlength="2"  placeholder="(  )" value=""> - 
-   <input type="tel" name="telefone" size="9" maxlength="9"  value=" ">
-  </td>
-</tr>
+      <td>DDD:</td>
+      <td><input name="ddd" type="text" size="2" maxlength="2" /> - <input name="celular" type="text" /></td>
+    </tr>
 
-  <tr>
-<td>
-<label>Sexo: </label>
-</td>
-<td>	
-<input id="feminino" name="sexo" type="radio" value="feminino" /> 
-	<label for="feminino">Feminino</label>
-	
-	
-	<input id="masculino" name="sexo" type="radio" value="masculino" /> 
-	<label for="masculino">Masculino</label>
-	</td>
-</tr>
+ <tr>
+      <td>Sexo:</td>
+      <td><input name="sexo" type="radio" value="M" checked="checked" />
+        Masculino 
+        <input name="sexo" type="radio" value="F" />
+        Feminino</td>
+    </tr>
 
  
  </table>
 </fieldset>
-
-
-<br/>
-
 <fieldset class="fieldset1">
  <legend class="formulario">Endereço</legend>
  <table cellspacing="10">
@@ -202,15 +188,16 @@
   <label>Tipo</label>
   </td>
   <td>
-  	 <select name="estado"> 
-    <option value="RU">Rua</option>
-     <option value="AV">Avenida</option> 
-    <option value="RO">Rodovia</option> 
-    <option value="EST">Estrada</option> 
-    <option value="TR">Travessa</option>
-    <option value="SI">Sitio</option> 
-     <option value="Q">Quadra</option>  
-     <option value="PC">Praça</option>  
+     <select name="tipo"> 
+     <option>Selecione</option>
+    <option value="RUA">Rua</option>
+     <option value="AVENIDA">Avenida</option> 
+    <option value="RODOVIA">Rodovia</option> 
+    <option value="ESTRADA">Estrada</option> 
+    <option value="TRAVESSA">Travessa</option>
+    <option value="SITIO">Sitio</option> 
+     <option value="QUADRA">Quadra</option>  
+     <option value="PRACA">Praça</option>  
     </select>
   </td>
 
@@ -220,13 +207,13 @@
     <label for="rua">Logradouro:</label>
    </td>
    <td >
-    <input type="text" name="rua">
+    <input type="text" name="logradouro">
    </td>
    <td>
     <label for="numero">Numero:</label>
    </td>
    <td>
-    <input type="text" name="numero" size="4">
+    <input type="text" name="numero" size="4" >
    </td>
   </tr>
   <tr>
@@ -234,7 +221,7 @@
     <label for="bairro">Bairro: </label>
    </td>
    <td>
-    <input type="text" name="bairro">
+    <input type="text" name="bairro" >
    </td>
   </tr>
   <tr>
@@ -243,33 +230,34 @@
    </td>
    <td >
     <select name="estado"> 
-    <option value="ac">Acre</option> 
-    <option value="al">Alagoas</option> 
-    <option value="am">Amazonas</option> 
-    <option value="ap">Amapá</option> 
-    <option value="ba">Bahia</option> 
-    <option value="ce">Ceará</option> 
-    <option value="df">Distrito Federal</option> 
-    <option value="es">Espírito Santo</option> 
-    <option value="go">Goiás</option> 
-    <option value="ma">Maranhão</option> 
-    <option value="mt">Mato Grosso</option> 
-    <option value="ms">Mato Grosso do Sul</option> 
-    <option value="mg">Minas Gerais</option> 
-    <option value="pa">Pará</option> 
-    <option value="pb">Paraíba</option> 
-    <option value="pr">Paraná</option> 
-    <option value="pe">Pernambuco</option> 
-    <option value="pi">Piauí</option> 
-    <option value="rj">Rio de Janeiro</option> 
-    <option value="rn">Rio Grande do Norte</option> 
-    <option value="ro">Rondônia</option> 
-    <option value="rs">Rio Grande do Sul</option> 
-    <option value="rr">Roraima</option> 
-    <option value="sc">Santa Catarina</option> 
-    <option value="se">Sergipe</option> 
-    <option value="sp">São Paulo</option> 
-    <option value="to">Tocantins</option> 
+    <option>Selecione</option>
+    <option value="AC">Acre</option> 
+    <option value="AL">Alagoas</option> 
+    <option value="AM">Amazonas</option> 
+    <option value="AP">Amapá</option> 
+    <option value="BA">Bahia</option> 
+    <option value="CE/">Ceará</option> 
+    <option value="DF">Distrito Federal</option> 
+    <option value="ES">Espírito Santo</option> 
+    <option value="GO">Goiás</option> 
+    <option value="MA">Maranhão</option> 
+    <option value="MT">Mato Grosso</option> 
+    <option value="MS">Mato Grosso do Sul</option> 
+    <option value="MG">Minas Gerais</option> 
+    <option value="PA">Pará</option> 
+    <option value="PB">Paraíba</option> 
+    <option value="PR">Paraná</option> 
+    <option value="PE">Pernambuco</option> 
+    <option value="PI">Piauí</option> 
+    <option value="RJ">Rio de Janeiro</option> 
+    <option value="RN">Rio Grande do Norte</option> 
+    <option value="RO">Rondônia</option> 
+    <option value="RS">Rio Grande do Sul</option> 
+    <option value="RR">Roraima</option> 
+    <option value="SC">Santa Catarina</option> 
+    <option value="SE">Sergipe</option> 
+    <option value="SP">São Paulo</option> 
+    <option value="TO">Tocantins</option> 
    </select>
    </td>
   </tr>
@@ -278,7 +266,7 @@
     <label for="cidade">Cidade: </label>
    </td>
    <td >
-    <input type="text" name="cidade">
+    <input type="text" name="cidade" >
    </td>
   </tr>
   <tr>
@@ -286,13 +274,12 @@
     <label for="cep">CEP: </label>
    </td>
    <td >
-    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+    <input type="text" name="cep" size="10" maxlength="10" > 
    </td>
   </tr>
  </table>
 </fieldset>
 <br />
-
 
 
 <div class="botao">
