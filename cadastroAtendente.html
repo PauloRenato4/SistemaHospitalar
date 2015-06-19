@@ -89,9 +89,22 @@
 <fieldset id="fieldset">
  <legend  class="formulario">Dados Pessoais</legend>
 
+  <form name="formulario1" method="post">
+ <table class="table">
+ <tr>
+   <td>
+    <label>CPF:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="cpf" size="9" maxlength="11" id="cpfB">
+    <input type="submit" value="Buscar" id="buscarP" name="busca">
+    
+   </td>
+  </tr>
+  </form>
+
 <form  action="php/CadastroAtendente.php" method="post"> 
 
- <table class="table">
 
 
 
@@ -109,16 +122,6 @@
     <input type="text" name="sobrenome" required>
    </td>
 
-  </tr>
-
-<tr>
-<td>
-    <label>CPF:</label>
-</td>
-<td>
-    <input type="text" name="cpf" size="11" maxlength="11" required> 
- 
-  </td>
   </tr>
 
 
@@ -382,10 +385,18 @@
 </div>
 </form>
 
+
 <div id="footer">
     <p> Todos os direitos reservados. Sistema Hospitalar</p>
   </div>
 </div>
+
+
+<script src="js/imprimir.js"></script>
+            <script src="http://code.jquery.com/jquery-1.9.0.js"></script>                                          
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>      
+<script src="js/AjaxBuscaPaciente/CadastroBuscaA.js"></script>
+
 
 
 

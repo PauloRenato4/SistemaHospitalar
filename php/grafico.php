@@ -20,14 +20,6 @@ while ($obj = $stmt->fetchObject()) {
 echo gerar_grafico_torta($dados, 'Quantidade de Homens/Mulheres');
 exit(0);
 
-/**
- * Imprime um grafico de torta
- * @param array[string => int] $dados: Dados do Grafico
- * @param string $titulo: Titulo do grafico
- * @param int $largura: Largura do grafico
- * @param int $altura: Altura do grafico
- * @return string Tag IMG com o caminho para o grafico
- */
 function gerar_grafico_torta($dados, $titulo, $largura = 300, $altura = 100) {
 
     // Gerando a URL dinamicamente
