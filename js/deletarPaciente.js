@@ -10,14 +10,21 @@ var UserDelete = {
 
 
  createEvent:function(){
-        document.formulario.addEventListener('submit', function(event) {			                                      
+        document.formulario.addEventListener('reset', function(event) {			                                      
             var cpf = document.formulario.cpf.value;
-            UserAcco.buscarPaciente(cpf);            
+            UserAcco.deletarpaciente(cpf);            
             
             event.preventDefault();			
 		});
     },
 
+
+deletarpaciente: function(cpf) {
+		if(ContactListService.remove(cpf)) {
+			var dl = cpf.parentNode.parentNode;
+			dl.parentNode.removeChild(dl);
+		}
+	}
 
 };
 
