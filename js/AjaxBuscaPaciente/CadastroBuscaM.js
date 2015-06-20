@@ -52,7 +52,8 @@ var UserAccount = {
         document.formulario.crm.value = dados.crm;
         document.formulario.expedicao.value = dados.expedicao;
         document.formulario.turno.value = dados.turno;
-    
+        
+      alert("Medico Ja cadastrado!");
 
      }
                                         

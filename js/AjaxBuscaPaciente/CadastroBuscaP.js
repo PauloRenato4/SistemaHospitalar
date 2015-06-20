@@ -52,6 +52,9 @@ var UserAccount = {
         document.formulario.cep.value = dados.cep;
 
 
+        alert("Paciente Ja cadastrado!");
+
+
 
     
 

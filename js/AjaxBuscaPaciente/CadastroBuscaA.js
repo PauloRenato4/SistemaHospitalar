@@ -52,6 +52,8 @@ var UserAccount = {
         document.formulario.cep.value = dados.cep;
         document.formulario.expedicao.value = dados.expedicao;
         document.formulario.turno.value = dados.turno;
+        
+          alert("Atendente Ja cadastrado!");
     
 
      }
