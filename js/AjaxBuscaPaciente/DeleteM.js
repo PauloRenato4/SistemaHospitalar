@@ -18,7 +18,7 @@ var deletUser = {
         
         var user = $('#cpf').val();
         
-        $.post('php/DeletarP.php',
+        $.post('php/DeletarM.php',
                {user: user},
                function (data) {
                     deletUser.report(data);
@@ -28,7 +28,7 @@ var deletUser = {
     report: function (data) {
         
         if(data=='success') {
-            alert('Paciente excluido com sucesso!');
+            alert('Medico excluido com sucesso!');
 
             deletUser.clearForm(form);
         }
