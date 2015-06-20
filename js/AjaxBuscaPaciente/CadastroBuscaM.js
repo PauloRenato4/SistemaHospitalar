@@ -32,13 +32,15 @@ var UserAccount = {
         if(dados.nome == undefined){
             alert("Cpf ainda nao cadastrado");
         } else if(dados){
-        
+
         document.formulario.nome.value = dados.nome;
         document.formulario.sobrenome.value = dados.sobrenome;
+        document.formulario.cpf.value = dados.cpf;
         document.formulario.rg.value = dados.rg;
         document.formulario.nacionalidade.value = dados.nacionalidade;
         document.formulario.email.value = dados.email;
         document.formulario.nascimento.value = dados.nascimento;
+        document.formulario.idade.value = dados.idade;
         document.formulario.ddd.value = dados.ddd;
         document.formulario.celular.value = dados.celular;
         document.formulario.sexo.value = dados.sexo;
@@ -52,6 +54,7 @@ var UserAccount = {
         document.formulario.crm.value = dados.crm;
         document.formulario.expedicao.value = dados.expedicao;
         document.formulario.turno.value = dados.turno;
+      
         
       alert("Medico Ja cadastrado!");
 

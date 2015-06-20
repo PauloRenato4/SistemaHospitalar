@@ -98,7 +98,7 @@
     <label>CPF:</label>
    </td>
    <td align="left">
-    <input type="text" name="cpf" size="9" maxlength="11" id="cpfB">
+    <input type="text" name="cpf" size="9" maxlength="11" id="cpf">
     <input type="submit" value="Buscar" id="buscarP" name="busca">
     
    </td>
@@ -129,7 +129,7 @@
     <label>CPF:</label>
    </td>
    <td align="left">
-    <input type="text" name="cpf" id="cpf" size="9" maxlength="11" id="cpfB">
+    <input type="text" name="cpf" id="cpf" size="9" maxlength="11" >
     
    </td>
   </tr>
@@ -159,7 +159,7 @@
 		<label>E-mail:</label>
 	</td>
 	<td>
-		<input type="text" name="email">
+		<input type="text" name="email" id="email" >
 	</td>
 </tr>
 
@@ -168,11 +168,19 @@
     <label>Nascimento: </label>
    </td>
    <td >
-    <input type="date" name="nascimento">
+    <input type="date" name="nascimento" id="nascimento">
    </td>
   </tr>
 
 
+<tr>
+  <td>
+    <label>Idade:</label>
+  </td>
+  <td>
+  <input type="text" name="idade" id="idade" size="2" maxlength="3">
+  </td>
+</tr>
 
 <tr>
       <td>Celular:</td>
@@ -348,7 +356,7 @@
 
 <div class="botao">
   <input  type="reset" value="Limpar"> 
-<input  type="reset" value="Deletar" id="deletarP" name="deletar"> 
+<input  type="submit" value="Deletar" > 
 
 </div>
 

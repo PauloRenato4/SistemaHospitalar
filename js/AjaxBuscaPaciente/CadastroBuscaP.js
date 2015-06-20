@@ -34,8 +34,8 @@ var UserAccount = {
         } else if(dados){
         
         document.formulario.nome.value = dados.nome;
-        document.formulario.cpf.value = dados.cpf;
         document.formulario.sobrenome.value = dados.sobrenome;
+        document.formulario.cpf.value = dados.cpf;
         document.formulario.rg.value = dados.rg;
         document.formulario.nacionalidade.value = dados.nacionalidade;
         document.formulario.email.value = dados.email;
