@@ -92,7 +92,7 @@
  <legend  class="formulario">Dados Pessoais</legend>
  <table class="table">
 
- <form name="formulario" method="post">
+ <form name="formulario1"  method="post">
  <tr>
    <td>
     <label>CPF:</label>
@@ -103,6 +103,11 @@
     
    </td>
   </tr>
+
+  </form>
+
+ <form name="formulario" action="php/DeletarP.php" method="post">
+ 
 
   <tr>
    <td>
@@ -291,7 +296,7 @@
 <div class="botao">
   <input  type="submit" value="Salvar"> 
   <input  type="reset" value="Limpar"> 
-<input  type="reset" value="Deletar" id="deletarP" name="deletar"> 
+<input  type="submit" value="Deletar" > 
 
 </div>
 
@@ -309,6 +314,8 @@
 <script src="http://code.jquery.com/jquery-1.9.0.js"></script>                                          
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>      
 <script src="js/AjaxBuscaPaciente/ControllerPacient.js"></script>
+<script src="js/AjaxBuscaPaciente/CadastroBuscaP.js"></script>
+
 
 
 
