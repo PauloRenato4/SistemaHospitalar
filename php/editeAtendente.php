@@ -39,16 +39,16 @@ $vetData[31] = "cidade";
 $vetData[32] = $_POST["cidade"];
 $vetData[33] = "cep";
 $vetData[34] = $_POST["cep"];
-$vetData[33] = "expedicao";
-$vetData[34] = $_POST["expedicao"];
-$vetData[33] = "turno";
-$vetData[34] = $_POST["turno"];
+$vetData[35] = "expedicao";
+$vetData[36] = $_POST["expedicao"];
+$vetData[37] = "turno";
+$vetData[38] = $_POST["turno"];
 
 if($vetData[0] == ""){
     echo "noUser";
     return;
 }
-for($i = 1; $i < 36; $i = $i + 2) {  
+for($i = 1; $i < 40; $i = $i + 2) {  
     
     if(isset($vetData[$i + 1]) && $vetData[$i + 1] != "" && $vetData[$i + 1] != "n"){
         

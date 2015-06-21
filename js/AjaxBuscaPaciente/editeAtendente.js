@@ -18,7 +18,7 @@ var editeAtendente = {
         
         var cpf = $("#cpf").val();
         var nome = $("#nome").val();
-        var sobrenome = $("#sobrenome").Atendente
+        var sobrenome = $("#sobrenome").val();
         var rg = $("#rg").val();
         var nacionalidade = $("#nacionalidade").val();
         var email = $("#email").val();
