@@ -23,7 +23,7 @@ $mensagem = $_POST['mensagem'];
 if( mysql_query("INSERT INTO paciente(nome,sobrenome,cpf,rg,nacionalidade,email,nascimento,idade,ddd,celular,sexo,tipo,logradouro,numero,bairro,estado,cidade,cep, checke,mensagem)
 	VALUES ('$nome','$sobrenome','$cpf','$rg','$nacionalidade','$email','$nascimento','$idade','$ddd','$celular','$sexo','$tipo',
 		'$logradouro','$numero', '$bairro','$estado','$cidade','$cep','$checke', '$mensagem')")){
-echo "Cadastro Realizado Com Sucesso!";
+echo "success";
 }
 else{
 echo "Cadastro Nao Realizado";

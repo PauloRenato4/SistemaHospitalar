@@ -115,7 +115,7 @@
   </tr>
   </form>
 
-<form name="formulario"  action="php/CadastroPaciente.php" method="post" > 
+<form name="formulario"  id="cadastrar" > 
 
 
 
@@ -125,13 +125,13 @@
     <label >Nome: </label>
    </td>
    <td >
-    <input type="text" name="nome" required>
+    <input type="text" name="nome" id="nome" required>
    </td>
    <td>
     <label for="sobrenome">Sobrenome: </label>
    </td>
    <td >
-    <input type="text" name="sobrenome" required>
+    <input type="text" name="sobrenome" id="sobrenome" required>
    </td>
 
   </tr>
@@ -151,7 +151,7 @@
     <label>RG: </label>
    </td>
    <td>
-    <input type="text" name="rg" size="13" maxlength="13" required> 
+    <input type="text" name="rg" size="13" maxlength="13" id="rg" required> 
    </td>  
   </tr>
   
@@ -160,7 +160,7 @@
     <label>Nacionalidade:</label>
   </td>
   <td>
-    <input type="text" name="nacionalidade" required>
+    <input type="text" name="nacionalidade" id="nacionalidade" required>
   </td>
 
 </tr>
@@ -188,7 +188,7 @@
     <label>Idade:</label>
   </td>
   <td>
-  <input type="text" name="idade" size="2" maxlength="3" required>
+  <input type="text" name="idade" size="2" maxlength="3" id="idade" required>
   </td>
 </tr>
 
@@ -196,14 +196,14 @@
 
 <tr>
       <td>DDD:</td>
-      <td><input name="ddd" type="text" size="2" maxlength="2" required/> - <input name="celular" type="text" required/></td>
+      <td><input name="ddd" type="text" size="2" maxlength="2" id="ddd" required/> - <input name="celular" type="text" id="celular" required/></td>
     </tr>
 
  <tr>
       <td>Sexo:</td>
-      <td><input name="sexo" type="radio" value="M" checked="checked" />
+      <td><input name="sexo" type="radio" value="M"  id="sexo" checked="checked" />
         Masculino 
-        <input name="sexo" type="radio" value="F" />
+        <input name="sexo" type="radio" id="sexo" value="F" />
         Feminino</td>
     </tr>
 
@@ -223,7 +223,7 @@
   <label>Tipo</label>
   </td>
   <td>
-     <select name="tipo"> 
+     <select name="tipo" id="tipo"> 
      <option>Selecione</option>
     <option value="RUA">Rua</option>
      <option value="AVENIDA">Avenida</option> 
@@ -242,13 +242,13 @@
     <label for="rua">Logradouro:</label>
    </td>
    <td >
-    <input type="text" name="logradouro" required>
+    <input type="text" name="logradouro" id="logradouro" required>
    </td>
    <td>
     <label for="numero">Numero:</label>
    </td>
    <td>
-    <input type="text" name="numero" size="4" required>
+    <input type="text" name="numero" size="4" id="numero" required>
    </td>
   </tr>
   <tr>
@@ -256,7 +256,7 @@
     <label for="bairro">Bairro: </label>
    </td>
    <td>
-    <input type="text" name="bairro" required>
+    <input type="text" name="bairro" id="bairro" required>
    </td>
   </tr>
   <tr>
@@ -264,7 +264,7 @@
     <label for="estado">Estado:</label>
    </td>
    <td >
-    <select name="estado"> 
+    <select name="estado" id="estado"> 
     <option>Selecione</option>
     <option value="AC">Acre</option> 
     <option value="AL">Alagoas</option> 
@@ -301,7 +301,7 @@
     <label for="cidade">Cidade: </label>
    </td>
    <td >
-    <input type="text" name="cidade" required>
+    <input type="text" name="cidade" id="cidade" required>
    </td>
   </tr>
   <tr>
@@ -309,7 +309,7 @@
     <label for="cep">CEP: </label>
    </td>
    <td >
-    <input type="text" name="cep" size="10" maxlength="10" required> 
+    <input type="text" name="cep" size="10" maxlength="10"  id="cep" required> 
    </td>
   </tr>
  </table>
@@ -325,38 +325,38 @@
  
  <tr>
   <td>
-  <input type="checkbox" name="checke" value="ATIVO">Possui alguma deficiência fisica <br>
+  <input type="checkbox" name="checke" id="checke" value="ATIVO">Possui alguma deficiência fisica <br>
   </td>
 
  </tr>
  <tr>
   <td>
-  <input type="checkbox" name="checke" value="ATIVO">Toma remédio controlado<br>
+  <input type="checkbox" name="checke" id="checke" value="ATIVO">Toma remédio controlado<br>
   </td>
 
  </tr>
  <tr>
   <td>
-  <input type="checkbox" name="checke" value="ATIVO">tem plano de saúde<br>
+  <input type="checkbox" name="checke" id="checke" value="ATIVO">tem plano de saúde<br>
   </td>
 
  </tr>
  <tr>
   <td>
-  <input type="checkbox" name="checke" value="ATIVO">Tem alergia a algum medicamento<br>
+  <input type="checkbox" name="checke" id="checke" value="ATIVO">Tem alergia a algum medicamento<br>
   </td>
 
  </tr>
 <tr>
   <td>
-  <input type="checkbox" name="checke" value="ATIVO" checked="checked">Nenhum dos casos acima<br>
+  <input type="checkbox" name="checke" id="checke" value="ATIVO" checked="checked">Nenhum dos casos acima<br>
   </td>
 
  </tr>
 <tr>
   <td>
     <label>Informações Adicionais:</label><br>  
-    <textarea name="mensagem" cols="125" rows="8"></textarea><br>
+    <textarea name="mensagem" cols="125" id="mensagem" rows="8"></textarea><br>
 </td>
 </tr>
 
@@ -376,11 +376,10 @@
   </div>
 </div>
 
-
-<script src="js/imprimir.js"></script>
-            <script src="http://code.jquery.com/jquery-1.9.0.js"></script>                                          
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>      
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>                                          
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>      
 <script src="js/AjaxBuscaPaciente/CadastroBuscaP.js"></script>
+<script src="js/AjaxBuscaPaciente/CadastrarP.js"></script>
 
 </body>
 </html>
