@@ -9,6 +9,7 @@ $rg =$_POST['rg'];
 $nacionalidade =$_POST['nacionalidade'];
 $email =$_POST['email'];
 $nascimento =$_POST['nascimento'];
+
 $idade =$_POST['idade'];
 $ddd = $_POST['ddd'];
 $celular =$_POST['celular'];
