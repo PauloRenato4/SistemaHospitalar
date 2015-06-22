@@ -65,7 +65,7 @@ h1{
 textarea{
     align-content: center;
      width: 960px;
-    height: 500px;
+    height: 400px;
     float: left;
     padding-right: 20px;
   color: black;
@@ -99,5 +99,6 @@ img{
 .b
 
 {
-  margin-left: 450px;  
+  margin-left: 400px;
+    
 }

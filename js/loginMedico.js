@@ -4,8 +4,8 @@ if (form.id.value=="medico") {
 if (form.pass.value=="2015") {              
 location="medicohospital.html" 
 } else {
-alert("Senha Invalida!")
+alert("Nome ou Senha Invalida!")
 }
-} else {  alert("Nome Invalido!")
+} else {  alert("Nome ou Senha Invalido!")
 }
 }

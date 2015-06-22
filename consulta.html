@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="css/sistemas.css">
+<link rel="stylesheet" href="css/receituario.css">    
+<script src="js/date.js"> </script>
+<meta charset="UTF-8">
 <head>
-	<title></title>
+	<title>ENCAMINHAMENTO MEDICO</title>
+	
+
 </head>
 <body>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<a href="medicohospital.html">MEDICO</a>
+<div id="receita">
+<img src="Imagens/logo.jpg" >
+<h1>ENCAMINHAMENTO MEDICO</h1>
+<span>Presado(a) colega Dr.(a)</span> <input type="text" name="paciente" >
 
+
+<span>Encaminho o meu paciente</span> <input type="text" name="paciente" >
+
+
+<span>para análise da conduta que julgar necessaría.</span>
+
+
+<span>Agradeço a atenção e aguardo seu parecer</span>
+
+
+
+Obs:<textarea maxlength="400"></textarea>
+
+
+<script>dateNow();</script> 
+
+<div class="ass">
+    
+  <label>------------------------------------------------------------------
+                        assinatura e 
+                        carimbo do medico</label>  
+    
+    
+</div>
+
+
+<div class="b">
+<input type="button" value="Imprimir" OnClick="DoPrinting()">
+</div>
+
+
+
+ 
+
+
+ </div>
+<script src="js/imprimir.js"></script>
+<script src="js/receita.js"></script>    
 </body>
+<div id="footer">
+    <p> Todos os direitos reservados. Sistema Hospitalar</p>
+  </div>
 </html>
