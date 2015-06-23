@@ -2,7 +2,7 @@
 // Consultar dados
 $dados = array();
 
-$pdo = new PDO('mysql:host=localhost;dbname=sistemashospitalar', 'root', 'root');
+$pdo = new PDO('mysql:host=localhost;dbname=u350455626_siste', 'u350455626_siste', 'univas35');
 $sql = 'SELECT estado, COUNT(*) as quantidade FROM paciente GROUP BY estado';
 $stmt = $pdo->query($sql);
 

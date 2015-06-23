@@ -7,12 +7,12 @@ function deletUser($user){
      
     $sql = "DELETE FROM atendente WHERE cpf= '{$user}';";
      
-    $delet = mysql_query($sql);
+    $delet = mysqli_query($con,$sql);
     
     if($delet==1)
         return "ok";
     else
-        return mysql_error();
+        return mysqli_errno($con);
  
 }
 ?>

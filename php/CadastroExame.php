@@ -4,7 +4,7 @@ include_once('conect.php');
 
 $nomeExame = $_POST['nomeExame'];
 
-if( mysql_query("INSERT INTO exame(nomeExame) VALUES ('$nomeExame')"))
+if( mysqli_query($con,"INSERT INTO exame(nomeExame) VALUES ('$nomeExame')"))
 
 	echo "Cadastro Realizado Com Sucesso!";
 

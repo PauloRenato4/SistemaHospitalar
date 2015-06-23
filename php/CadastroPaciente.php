@@ -20,7 +20,7 @@ $cidade =$_POST['cidade'];
 $cep =$_POST['cep'];	
 $checke = $_POST['checke'];
 $mensagem = $_POST['mensagem'];
-if( mysql_query("INSERT INTO paciente(nome,sobrenome,cpf,rg,nacionalidade,email,nascimento,idade,ddd,celular,sexo,tipo,logradouro,numero,bairro,estado,cidade,cep, checke,mensagem)
+if( mysqli_query($con,"INSERT INTO paciente(nome,sobrenome,cpf,rg,nacionalidade,email,nascimento,idade,ddd,celular,sexo,tipo,logradouro,numero,bairro,estado,cidade,cep, checke,mensagem)
 	VALUES ('$nome','$sobrenome','$cpf','$rg','$nacionalidade','$email','$nascimento','$idade','$ddd','$celular','$sexo','$tipo',
 		'$logradouro','$numero', '$bairro','$estado','$cidade','$cep','$checke', '$mensagem')")){
 echo "success";

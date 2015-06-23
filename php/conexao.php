@@ -1,8 +1,8 @@
 <?php
 
-$base_dados = 'sistemashospitalar';
-$usuario_bd = 'root';
-$senha_bd   = 'root';
+$base_dados = 'u350455626_siste';
+$usuario_bd = 'u350455626_siste';
+$senha_bd   = 'univas35';
 $host_db    = 'localhost';
 $conexao_pdo = null;
 $charset = 'utf8';

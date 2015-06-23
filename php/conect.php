@@ -1,7 +1,11 @@
 <?php 
 
-$link = mysql_pconnect ("localhost" , "root", "root");	
-$banco = mysql_select_db("sistemashospitalar", $link);
 
+$con = mysqli_connect("localhost","u350455626_siste","univas35","u350455626_siste");
+
+if (!$con)
+  {
+  die("Connection error: " . mysqli_connect_error());
+  }
 
  ?>

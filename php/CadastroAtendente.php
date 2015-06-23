@@ -25,7 +25,7 @@ $expedicao =$_POST['expedicao'];
 $turno =$_POST['turno'];
 $checke = $_POST['checke'];
 $mensagem = $_POST['mensagem'];
-if( mysql_query("INSERT INTO atendente(nome,sobrenome,cpf,rg,nacionalidade,email,nascimento,idade,ddd,celular,sexo,tipo,logradouro,numero,bairro,estado,cidade,cep,expedicao,turno,checke,mensagem)
+if( mysqli_query($con,"INSERT INTO atendente(nome,sobrenome,cpf,rg,nacionalidade,email,nascimento,idade,ddd,celular,sexo,tipo,logradouro,numero,bairro,estado,cidade,cep,expedicao,turno,checke,mensagem)
 	VALUES ('$nome','$sobrenome','$cpf','$rg','$nacionalidade','$email','$nascimento','$idade','$ddd','$celular','$sexo','$tipo','$logradouro','$numero', '$bairro','$estado','$cidade',
 		'$cep','$expedicao','$turno','$checke', '$mensagem')")){
 echo "Cadastro Realizado Com Sucesso!";
