@@ -1,18 +1,22 @@
 <?php
-include_once('conect.php');
+include('conect.php');
 
 
 function deletUser($user){
-    
+
+$con = mysqli_connect("localhost","u350455626_siste","univas35","u350455626_siste");
+
      
     $sql = "DELETE FROM atendente WHERE cpf= '{$user}';";
      
-    $delet = mysqli_query($con,$sql);
-    
-    if($delet==1)
+    $delet =  mysqli_query($con,$sql);
+    if($delet){
         return "ok";
-    else
-        return mysqli_errno($con);
+    }
+    else{
+        return mysql_error();
+    }
  
 }
 ?>
+
