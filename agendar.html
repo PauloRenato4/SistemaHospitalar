@@ -99,7 +99,8 @@
 <fieldset id="fieldset">
  <legend  class="formulario">Dados Pessoais</legend>
  <table class="table">
- <form name="formulario" method="post">
+
+ <form name="formulario1" method="post">
  <tr>
    <td>
     <label>CPF:</label>
@@ -110,6 +111,9 @@
     
    </td>
   </tr>
+  </form>
+
+  <form name="formulario"  id="cadastrar" > 
 
   <tr>
    <td>
@@ -155,7 +159,7 @@
     <label>E-mail:</label>
   </td>
   <td>
-    <input type="text" name="e-mail">
+    <input type="text" name="email">
   </td>
 </tr>
 
@@ -164,7 +168,7 @@
     <label>Nascimento: </label>
    </td>
    <td >
-   <input type="date" name="validade">
+   <input type="date" name="nascimento">
    </td>
   </tr>
 
@@ -178,14 +182,10 @@
 </tr>
 
 <tr>
-  <td>
-  <label for="telefone">Celular:</label>
-  </td>
-  <td>
-   <input  class="data" type="tel" name="telefone" size="2" maxlength="2"  placeholder="(  )" value=""> - 
-   <input type="tel" name="telefone" size="9" maxlength="9"  value=" ">
-  </td>
-</tr>
+      <td>DDD:</td>
+      <td><input name="ddd" type="text" size="2" maxlength="2" id="ddd" required/> - <input name="celular" type="text" id="celular" required/></td>
+    </tr>
+
 
   <tr>
 <td>
@@ -235,7 +235,7 @@
     <label for="rua">Logradouro:</label>
    </td>
    <td >
-    <input type="text" name="rua">
+    <input type="text" name="logradouro">
    </td>
    <td>
     <label for="numero">Numero:</label>
@@ -359,7 +359,9 @@
      <label>Hora da Consulta</label>
    </td>
    <td>
-     <input type="time" name="time">
+     <input type="time" name="timeini">
+     <label>até</label>
+     <input type="time" name="timefin">
    </td>
  </tr>
 
@@ -375,25 +377,25 @@
  
  <tr>
   <td>
-  <input type="checkbox" name="vehicle" value="Bike">Possui alguma doença <br>
+  <input type="checkbox" name="checke" id="checke" value="ATIVO">Possui alguma doença <br>
   </td>
 
  </tr>
  <tr>
   <td>
-  <input type="checkbox" name="vehicle" value="Bike">Toma remédio controlado<br>
+  <input type="checkbox" name="checke" id="checke" value="ATIVO">Toma remédio controlado<br>
   </td>
 
  </tr>
  <tr>
   <td>
-  <input type="checkbox" name="vehicle" value="Bike">tem plano de saúde<br>
+  <input type="checkbox" name="checke" id="checke" value="ATIVO">tem plano de saúde<br>
   </td>
 
  </tr>
  <tr>
   <td>
-  <input type="checkbox" name="vehicle" value="Bike">Tem alergia a algum medicamento<br>
+  <input type="checkbox" name="checke" id="checke" value="ATIVO">Tem alergia a algum medicamento<br>
   </td>
 
  </tr>
@@ -401,7 +403,7 @@
 <tr>
   <td>
     <label>Informações Adicionais:</label><br>  
-    <textarea class="msg" cols="35" rows="8"></textarea><br>
+    <textarea name="mensagem" cols="125" id="mensagem" rows="8"></textarea><br>
 </td>
 </tr>
 
@@ -423,6 +425,7 @@
             <script src="http://code.jquery.com/jquery-1.9.0.js"></script>                                          
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>      
 <script src="js/AjaxBuscaPaciente/ControllerPacient.js"></script>
+<script src="js/AjaxBuscaPaciente/Agendar.js"></script>
 
 </body>
 </html>
