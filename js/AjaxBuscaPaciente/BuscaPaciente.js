@@ -51,7 +51,11 @@ var UserAccount = {
         document.formulario.estado.value = dados.estado;
         document.formulario.cidade.value = dados.cidade;
         document.formulario.cep.value = dados.cep;
-        
+        document.formulario.consulta.value = dados.consulta;
+        document.formulario.medico.value = dados.medico;
+        document.formulario.validade.value = dados.validade;
+        document.formulario.timeini.value = dados.timeini;
+        document.formulario.timefin.value = dados.timefin;
 
 
      }
