@@ -26,7 +26,7 @@ $timefin =$_POST['timefin'];
 $checke = $_POST['checke'];
 $mensagem = $_POST['mensagem'];
 
-if( mysqli_query($con,"INSERT INTO paciente(nome,sobrenome,cpf,rg,nacionalidade,email,nascimento,idade,ddd,celular,sexo,tipo,logradouro,numero,bairro,estado,cidade,cep, checke,mensagem)
+if( mysqli_query($con,"INSERT INTO agenda(nome,sobrenome,cpf,rg,nacionalidade,email,nascimento,idade,ddd,celular,sexo,tipo,logradouro,numero,bairro,estado,cidade,cep, checke,mensagem)
 	VALUES ('$nome','$sobrenome','$cpf','$rg','$nacionalidade','$email','$nascimento','$idade','$ddd','$celular','$sexo','$tipo',
 		'$logradouro','$numero', '$bairro','$estado','$cidade','$cep','$consulta', '$medico', '$validade', '$timeini', '$timefin', $checke', '$mensagem')")){
 echo "success";

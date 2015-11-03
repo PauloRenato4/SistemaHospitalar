@@ -7,8 +7,8 @@ var UserAccount = {
     },
 
     createEvent:function(){
-        document.formulario.addEventListener('submit', function(event) {			                                      
-            var cpf = document.formulario.cpf.value;
+        document.formulario1.addEventListener('submit', function(event) {			                                      
+            var cpf = document.formulario1.cpf.value;
             UserAccount.buscarPaciente(cpf);            
             
             event.preventDefault();			
@@ -56,6 +56,8 @@ var UserAccount = {
         document.formulario.validade.value = dados.validade;
         document.formulario.timeini.value = dados.timeini;
         document.formulario.timefin.value = dados.timefin;
+
+           alert("Paciente Ja cadastrado!");
 
 
      }
