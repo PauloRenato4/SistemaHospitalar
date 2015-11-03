@@ -10,7 +10,7 @@ echo "<table width='300px' border='1px'><tr><td>NOME</td><td>SOBRENOME</td><td>C
 echo "<tr><td>" 
 . $row['nome'] . "</td><td>" . $row['sobrenome']. "</td><td>" . $row['cpf']. "</td><td>" . $row['rg']. "</td><td>" . $row['nacionalidade'].
  "</td><td>" .  $row['email']. "</td><td>" . $row['nascimento']. "</td><td>" . $row['idade']. "</td><td>" . $row['ddd'].
-"</td><td>" . $row['celular']. "</td><td>" . $row['sexo']. "</td><td>" . $row['consulta']. "</td><td>" . $row['medico']."</td><td>" . $row['timeini']. "</td><td>" . $row['timefin']. "</td>  
+"</td><td>" . $row['celular']. "</td><td>" . $row['sexo']. "</td><td>" . $row['consulta']. "</td><td>" . $row['medico']."</td><td>" . $row['validade']. "</td><td>" . $row['timeini']. "</td><td>" . $row['timefin']. "</td>  
 </tr> ";
 }
 echo "</table>"; 
