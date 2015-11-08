@@ -1,4 +1,4 @@
-var cadPerson = {
+    var cadPerson = {
     
     init: function () {
         cadPerson.readPage();
