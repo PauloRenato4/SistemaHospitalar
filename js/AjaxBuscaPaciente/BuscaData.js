@@ -16,7 +16,7 @@ var UserAccount = {
     },
         
         
-    buscarData: function(cpf){    
+    buscarData: function(validade){    
         
 	 $.post('php/BuscaData.php', 
            {validade:validade},
@@ -36,7 +36,7 @@ var UserAccount = {
         document.formulario.nome.value = dados.nome;
         document.formulario.sobrenome.value = dados.sobrenome;
         document.formulario.cpf.value = dados.cpf;
-    
+    alert("Paciente Ja cadastrado!");
     
 
      }
