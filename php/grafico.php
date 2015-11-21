@@ -8,6 +8,7 @@ $sql = 'SELECT sexo , COUNT(*) as quantidade FROM medico where  GROUP BY sexo';
     
     array('label' => 'sexo', 'type' => 'string'),
     array('label' => 'quantidade', 'type' => 'number')
+    
 );
 $rows = array();
 while($r = mysql_fetch_assoc($sql)) {
