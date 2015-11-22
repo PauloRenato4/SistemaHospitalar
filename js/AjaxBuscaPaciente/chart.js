@@ -2,7 +2,7 @@
 
       function drawChart() {
         var json = $.ajax({
-          url: 'grafico.php', // make this url point to the data file
+          url: 'php/grafico.php', // make this url point to the data file
           dataType: 'json',
           async: false
         }).responseText;
