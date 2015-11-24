@@ -8,6 +8,8 @@
           async: false
         }).responseText;
         
+
+        
         // Create our data table out of JSON data loaded from server.
         var data = new google.visualization.DataTable(json);
         var options = {

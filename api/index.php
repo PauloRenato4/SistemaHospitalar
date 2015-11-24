@@ -3,6 +3,7 @@ require 'vendor/autoload.php';
 require 'database/ConnectionFactory.php';
 require 'funcionarios/HospitalService.php';
 
+
 $app = new \Slim\Slim();
 
 $app->get('/', function() use ( $app ) {
