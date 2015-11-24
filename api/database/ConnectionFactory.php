@@ -8,10 +8,10 @@ class ConnectionFactory {
     }
     
     private static function getConnection() {
-        $dbhost = getenv('IP');
-        $dbuser = getenv('C9_USER');
-        $dbpass = '';
-        $dbname = 'c9';
+        $dbhost = getenv('127.0.0.1');
+        $dbuser = getenv('u350455626_siste');
+        $dbpass = 'univas35';
+        $dbname = 'u350455626_siste';
         
         try {
             $connection = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
@@ -25,3 +25,6 @@ class ConnectionFactory {
     }
 }
 ?>
+
+
+    
