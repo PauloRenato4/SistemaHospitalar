@@ -1,8 +1,9 @@
+
   google.setOnLoadCallback(drawChart);
 
       function drawChart() {
         var json = $.ajax({
-          url: 'php/grafico.php', // make this url point to the data file
+          url: 'php/Relatorio.php', // make this url point to the data file
           dataType: 'json',
           async: false
         }).responseText;
