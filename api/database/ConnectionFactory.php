@@ -8,7 +8,7 @@ class ConnectionFactory {
     }
     
     private static function getConnection() {
-        $dbhost = getenv('127.0.0.1');
+        $dbhost = getenv('localhost');
         $dbuser = getenv('u350455626_siste');
         $dbpass = 'univas35';
         $dbname = 'u350455626_siste';
@@ -27,4 +27,4 @@ class ConnectionFactory {
 ?>
 
 
-    
+ 

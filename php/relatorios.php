@@ -59,6 +59,19 @@ echo "</table>";
 
 
 
+$result = mysqli_query($con,'SELECT * FROM funcionarios');
+echo "<BR><BR>FUNCIONARIOS CADASTRADOS COM REST API";
+echo "<table width='300px' border='1px'><tr><td>ID</td><td>NOME</td><td>SOBRENOME</td><td>CPF </td><td>RG </td><td>NACIONALIDADE</td><td>EMAIL</td><td>NASCIMENTO </td><td>IDADE</td>
+<td>DDD</td><td>CELULAR </td><td>SEXO</td></tr>";
+  while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+  
+echo "<tr><td>" . $row['id']. "</td><td>" 
+. $row['nome'] . "</td><td>" . $row['sobrenome']. "</td><td>" . $row['cpf']. "</td><td>" . $row['rg']. "</td><td>" . $row['nacionalidade'].
+ "</td><td>" .  $row['email']. "</td><td>" . $row['nascimento']. "</td><td>" . $row['idade']. "</td><td>" . $row['ddd'].
+"</td><td>" . $row['celular']. "</td><td>" . $row['sexo']. "</td>></tr> ";
+}
+echo "</table>"; 
+
 
 
  ?>
