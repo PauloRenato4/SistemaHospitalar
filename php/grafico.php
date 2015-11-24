@@ -1,7 +1,8 @@
 <?php
 
 $pdo = new PDO('mysql:host=localhost;dbname=u350455626_siste', 'u350455626_siste', 'univas35');
- $sql = 'SELECT sexo, COUNT(*) as quantidade FROM paciente GROUP BY sexo';
+
+$sql = 'SELECT sexo, COUNT(*) as quantidade FROM paciente GROUP BY sexo';
 $stmt = $pdo->query($sql);
 
 while ($obj = $stmt->fetchObject()) {
